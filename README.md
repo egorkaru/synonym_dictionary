@@ -1,6 +1,6 @@
 # "Russians synonym dictionary" by N. Abramov
 
-This is a JSON representation of "Russians synonym dictionary" by N. Abramov. It was parsed from text file, then merged with hyphenation dictionary from "Dictionaries for Russian" by OpenOffice.org.
+This is a JSON representation of "Dictionary of Russian synonyms and similar in meaning expressions" by N. Abramov. It was parsed from plain text file, then merged with hyphenation dictionary from "Dictionaries for Russian" by OpenOffice.org.
 
 ## Raw data sources
 
@@ -9,9 +9,9 @@ This is a JSON representation of "Russians synonym dictionary" by N. Abramov. It
 
 ## Contents
 
-* ```dictionary.json```: The whole dictionary as JSON file; Data still is pretty raw. Words can repeat, some records needs to be unioned, or deleted as unnecessary. Key "wordlist" contains all word in array, sorted alphabetically, i.e. ```{ "wordlist": [...19430 words] }```
+* ```dictionary.json```: The whole dictionary as JSON file; Data still is pretty raw. Words can repeat, some records needs to be unioned, or deleted as unnecessary. All words from dictionary can be accessed by "wordlist" property as array, sorted alphabetically, i.e. ```{ "wordlist": [ ...19430 Word Objects ] }```
 
-Word example:
+Word Objects example:
 
 ```
 { 
@@ -37,8 +37,8 @@ Word example:
 }
 ```
 
-* ```schema/dictionary.json```: contain dictionary JSON Schema. 
-* ```schema/word.json```: contain word JSON Schema. 
+* ```schema/dictionary.json```: contains Dictionary`s JSON Schema. 
+* ```schema/word.json```: contains Word JSON Schema (referred in Dictionary`s Schema). 
 * ```raw/dict1w.txt```: Abramov`s dictionary as plain text file. Was converted to UTF-8.
 * ```raw/th_ru_RU_v2.dat```: Hyphenation dictionary as addition source of data
 
