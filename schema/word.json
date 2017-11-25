@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Word",
+    "description": "A representation of a word from dictionary",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "The unique identifier for word",
+            "type": "integer",
+            "exclusiveMinimum": 0
+        },
+        "name": {
+            "description": "Word`s it self",
+            "type": "string"
+        },
+        "definition": {
+            "description": "Defenition of a word",
+            "type": "string"
+        },
+        "antonyms": {
+            "description": "Array of word`s antonyms",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 0
+        },
+        "similars": {
+            "description": "Array of words with similar defenition",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 0
+        },
+        "synonyms": {
+            "description": "Array of word`s synonyms", 
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 0
+        }
+    },
+    "required": [ "id", "name" ]
+}

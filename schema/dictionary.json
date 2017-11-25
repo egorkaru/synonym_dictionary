@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Dictionary of Russian synonyms and similar in meaning expressions. by N. Abramov",
+    "description": "Schema for the whole dictionary",
+    "type": "object",
+    "properties": {
+        "title": {
+            "description": "Dictionary`s name",
+            "type": "string"
+        },
+        "author": {
+            "description": "Original author name",
+            "type": "string"
+        },
+        "published_at": {
+            "description": "Publishing year",
+            "type": "number"
+        },
+        "wordlist": {
+            "description": "All words from dictionary",
+            "type": "array",
+            "items": {
+                "$ref": "word.json"
+            },
+            "minItems": 19431
+        }
+    },
+    "required": [ "dictionary" ]
+}
