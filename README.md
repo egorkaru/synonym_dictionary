@@ -1,6 +1,6 @@
-# "Russians synonym dictionary" by N. Abramov
+# "Russian synonym dictionary" by N. Abramov
 
-This is a JSON representation of "Dictionary of Russian synonyms and similar in meaning expressions" by N. Abramov. It was parsed from plain text file, then merged with hyphenation dictionary from "Dictionaries for Russian" by OpenOffice.org.
+This is a JSON representation of "Dictionary of Russian synonyms and similar in meaning expressions" by N. Abramov. It was parsed from a text file, then merged with hyphenation dictionary from "Dictionaries for Russian" by OpenOffice.org.
 
 ## Raw data sources
 
@@ -9,7 +9,7 @@ This is a JSON representation of "Dictionary of Russian synonyms and similar in 
 
 ## Contents
 
-* ```dictionary.json```: The whole dictionary as JSON file; Data still is pretty raw. Words can repeat, some records needs to be unioned, or deleted as unnecessary. All words from dictionary can be accessed by "wordlist" property as array, sorted alphabetically, i.e. ```{ "wordlist": [ ...19430 Word Objects ] }```
+* ```dictionary.json```: The whole dictionary as JSON file; Data still is pretty raw. Words can repeat sometimes, some records needs to be unioned or deleted as unnecessary. All words from dictionary can be accessed by "wordlist" property as array, sorted alphabetically, i.e. ```{ "wordlist": [ ...19430 Word Objects ] }```
 
 Word Objects example:
 
@@ -65,4 +65,4 @@ All scripts were written in JS. After nights without sleep. Some parts of work w
 
 Hyphenation dictionary from "Dictionaries for Russian" by OpenOffice.org licensed under GNU LGPL, conversion author is Peter Novodvorsky.
 
-Сonversion of "Russians synonym dictionary" by N. Abramov was done by Aleksandr Ilin in 2003.
+Сonversion of "Russian synonym dictionary" by N. Abramov was done by Aleksandr Ilin in 2003.
